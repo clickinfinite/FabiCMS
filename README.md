@@ -1,4 +1,4 @@
-# FabiCMS
+# FabiCMS New
 New CMS for PHP 7.0
 
 * **State:** [![Build Status](https://travis-ci.org/fenom-template/fenom.svg?branch=master)](https://travis-ci.org/fabianowty/fabicms) [![Coverage Status](https://coveralls.io/repos/fabianowty/fabicms/badge.svg?branch=master)](https://coveralls.io/r/fabianowty/fabicms?branch=master)
