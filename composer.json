@@ -1,1 +1,15 @@
 
+    "repositories":[
+ {
+            "type":"package",
+            "package":{
+                "name":"fabianowty/fabicms",
+                "version":"0.0.0.1",
+                "source":{
+                    "type":"git",
+                    "url":"https://github.com/Fabiart/FabiCMS",
+                    "reference":"master"
+                }
+            }
+        }
+    ],
