@@ -1,0 +1,156 @@
+/*
+ * http://github.com/peteboere/css-crush (v2.4.0)
+ */
+body {
+    font-family: Trebuchet MS,Tahoma;
+    background: #DDDCDC;
+    }
+@font-face {
+    font-family: Kavoon;
+    src: url(/public/fonts/Kavoon-Regular.ttf);
+    }
+a,
+a:link,
+a:active,
+a:hover {
+    text-decoration: none;
+    }
+.logo,
+.header {
+    background: #ee8208;
+    -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.25);
+    box-shadow: 1px 2px 5px rgba(0,0,0,.25);
+    padding: 15px;
+    }
+.logo:hover,
+.header:hover {
+    background: #CE6A05;
+    // background: #e07b0a;
+    -webkit-transition: background .4s ease-out;
+    -moz-transition: background .4s ease-out;
+    transition: background .4s ease-out;
+    }
+.logo a {
+    color: white !important;
+    font-family: 'Kavoon',cursive;
+    }
+.logo-text {
+    display: block;
+    height: 50px;
+    padding: 12px;
+    font-size: 25px;
+    line-height: .1;
+    letter-spacing: 1px;
+    }
+img {
+    margin-right: 3px;
+    }
+.menu {
+    opacity: .7;
+    background: purple;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    left: -100%;
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    transition: all .8s;
+    }
+.menu-link {
+    display: block;
+    -webkit-box-shadow: 1px 1px 10px rgbd(0,0,0,.4);
+    box-shadow: 1px 1px 10px rgbd(0,0,0,.4);
+    padding: 21px 21px 41px 21px;
+    }
+.menu-link span,
+.menu-link span:before,
+.menu-link span:after {
+    display: block;
+    height: 2px;
+    width: 26px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -13px;
+    top: 50%;
+    margin-top: -1px;
+    }
+.menu-link span:before {
+    -webkit-transition: transform .6s;
+    -moz-transition: transform .6s;
+    transition: transform .6s;
+    content: '';
+    margin-top: -8px;
+    }
+.menu-link span:after {
+    -webkit-transition: transform .6s;
+    -moz-transition: transform .6s;
+    transition: transform .6s;
+    content: '';
+    margin-top: 6px;
+    }
+.menu-link-active span {
+    background-color: transparent;
+    }
+.menu-link-active span:before {
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin-top: 0;
+    }
+.menu-link-active span:after {
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    margin-top: 0;
+    }
+.menu-active {
+    left: 0;
+    }
+.menu ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    }
+.menu ul a {
+    line-height: 4.5;
+    font-weight: 100;
+    display: block;
+    color: white;
+    letter-spacing: 2px;
+    }
+.menu ul a:hover {
+    font-size: 16px;
+    width: 100%;
+    background: rgba(255,255,255,.4);
+    -webkit-transition: background .6s;
+    -moz-transition: background .6s;
+    transition: background .6s;
+    }
+@media screen and (max-width: 1107px) {
+.logo-text {
+    font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 240px) {
+.logo-text {
+    font-size: 15px;
+    }
+}
+
+.p-0 {
+    padding: 0;
+    }

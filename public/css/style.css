@@ -1,0 +1,153 @@
+body {
+	font-family: Trebuchet MS, Tahoma;
+	background: #DDDCDC;
+}
+
+@font-face {
+    font-family: Kavoon; /* Гарнитура шрифта */
+    src: url(/public/fonts/Kavoon-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+
+a, a:link, a:active, a:hover {
+    text-decoration: none;
+}
+
+.logo , .header {
+background: #ee8208;
+box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.25);
+padding: 15px;
+}
+
+.logo:hover, .header:hover {
+	background: #CE6A05;
+	// background: #e07b0a;
+	transition: background .4s ease-out;
+}
+
+
+.logo a{
+	color: white !important;
+	font-family: 'Kavoon', cursive;
+}
+
+
+
+.logo-text {
+	display: block;
+	height: 50px;
+    padding: 12px;
+	font-size: 25px;
+    line-height: 0.1;
+	letter-spacing: 1px;
+}
+
+img {
+	margin-right: 3px;
+}
+
+.menu {
+    &-link {
+        display: block;
+        box-shadow: 1px 1px 10px rgbd(0,0,0, .4);
+		padding: 21px 21px 41px 21px;
+
+        span, span:before, span:after {
+        	display: block;
+        	height: 2px;
+        	width: 26px;
+        	background-color: #fff;
+        	position: absolute;
+        	left: 50%;
+            margin-left: -13px;
+   		    top: 50%;
+   			margin-top: -1px;
+        }
+
+        span:before {
+        	transition: transform .6s;
+        	content: '';
+        	margin-top: -8px;
+        }
+
+        span:after {
+        	transition: transform .6s;
+        	content: '';
+        	margin-top: 6px;
+        }
+	}
+
+    &-link-active {
+    	span {
+			background-color: transparent;
+
+			&:before {
+				transform: rotate(135deg);
+				margin-top: 0;
+			}
+
+			&:after {
+				transform: rotate(-135deg);
+				margin-top: 0;
+			}
+       } 
+	}
+
+	&-active {
+		left: 0;
+	}
+
+	   opacity: .7;
+       background: purple;
+	   position: fixed;
+	   width: 100%;
+	   height: 100%;
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
+	   left: -100%;
+	   transition: all .8s;
+
+       ul {
+	    
+	   width: 100%;	
+	   list-style: none;
+	   padding: 0;
+	   text-align: center;
+
+	   a {
+	   	line-height: 4.5;
+	   	font-weight: 100;
+	   	display: block;
+       	color: white;
+		letter-spacing: 2px;
+
+       	&:hover {
+       		font-size: 16px;
+       		width: 100%;
+       		background: rgba(255,255,255,.4);
+       		transition: background .6s;
+       	} 
+       }
+
+	}
+
+}
+
+
+
+@media screen and (max-width: 1107px) {
+	.logo-text {
+		font-size: 20px;
+	}
+}
+
+
+@media screen and (max-width: 240px) {
+	.logo-text {
+		font-size: 15px;
+	}
+}
+
+.p-0 {
+	padding: 0;
+} 
