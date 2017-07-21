@@ -1,15 +1,19 @@
-
-    "repositories":[
- {
-            "type":"package",
-            "package":{
-                "name":"fabianowty/fabicms",
-                "version":"0.0.0.1",
-                "source":{
-                    "type":"git",
-                    "url":"https://github.com/Fabiart/FabiCMS",
-                    "reference":"master"
-                }
-            }
+{
+    "name": "fabianowty/fabicms",
+    "type": "cms",
+    "description": "",
+    "keywords": ["fabianowty", "cms", "php"],
+    "authors": [
+        {
+            "name": "Fabianowty",
+            "email": "fabianowty@gmail.com"
         }
     ],
+    "require": {
+        "php": ">=7.0.0",
+    },
+    "require-dev": {
+        "phpunit/phpunit": "<6.0",
+        "satooshi/php-coveralls": "*"
+    }
+}
