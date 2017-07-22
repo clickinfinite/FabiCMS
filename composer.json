@@ -2,7 +2,7 @@
     "name": "fabianowty/fabicms",
     "type": "cms",
     "description": "",
-    "license": "GNU",
+    "license": "GNU v3",
     "keywords": ["fabianowty", "cms", "php"],
     "authors": [
         {
